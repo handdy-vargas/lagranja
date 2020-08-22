@@ -14,10 +14,15 @@
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>     
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- Fin Bootstrap -->
+
+        <!--Localization-->
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+        <script src="js/jquery-i18next.min.js"></script>
+
         <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     </head>
     <header>
@@ -27,7 +32,7 @@
                 <li>
                     <div class="caja">
                         <a href="#cont1" class="nounderline">
-                            <span class="info">Inici els pirineos</span>
+                            <span class="info" data-i18n="menu.inici"></span>
                             <img src="images/balance.png" />
                         </a>
                     </div>
@@ -35,7 +40,7 @@
                 <li>
                     <div class="caja">
                         <a href="#cont2" class="nounderline">
-                            <span class="info">Origen</span>
+                            <span class="info" data-i18n="menu.origen"></span>
                             <img src="images/balance.png" />
                         </a>
                     </div>
@@ -163,19 +168,9 @@
                 <img src="images/prueba.jpg">
             </div>
         </div>
-
-    <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => 
-    {
-    anchor.addEventListener('click', function (e) 
-    {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-    </script>
+        
+    <!--Javascript-->
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/localization.js"></script>
 </body>
 </html>
