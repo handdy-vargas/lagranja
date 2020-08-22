@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Celular           <768px
+Tablet               ≥768px
+Medium Desktops      ≥992px
+Large Desktops       ≥1200px*/
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
+.selector-for-some-widget 
+{
+    box-sizing: content-box;
+}
+body
+{
+  margin: 0px;
+  padding: 0px;
+}
+.container-fluid
+{
+  margin: 0px;
+  padding: 0px;
+}
+.row
+{
+  overflow-x: hidden;
+  margin:0%;
+}
+/* menu lateral flotante */
+.menu
+{
+  position: fixed;
+  right: 2%;
+  top: 30%;
+}
+ul li
+{
+  list-style-type:none;
+}
+.caja 
+{
+position: relative; /*Para poder ubicar la info dentro de la caja*/
+float: right;
+}
+a.nounderline:link
+{
+text-decoration:none;
+}
+.info 
+{
+right: 18%; /*Desplazamos a partir de la esquina superior izquierda*/
+zoom: 1;
+filter: alpha(opacity=0); /*Opacidad Para IE */
+opacity: 0; /*Inicialmente transparente */
+padding: 5px;
+color: black;
+-moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
+-webkit-transition:all ease .8s ;
+transition:all ease .8s;
+}
+.caja:hover .info 
+{
+filter: alpha(opacity=80);
+opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
+}
