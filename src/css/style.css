@@ -28,7 +28,11 @@ body
   overflow-x: hidden;
   margin:0%;
 }
-
+.col
+{
+  margin:0%;
+  padding: 0%;
+}
 /* Contenedor 2 ORIGEN */
 .conten2
 {
@@ -90,7 +94,7 @@ ul li
 {
 position: relative; /*Para poder ubicar la info dentro de la caja*/
 float: right;
-height: 15px;
+height: 18px;
 }
 a.nounderline:link
 {
@@ -116,7 +120,7 @@ filter: alpha(opacity=80);
 opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 
-/* Contenedor 2 ORIGEN */
+/* Contenedor 2: ORIGEN */
 .logo-cont2
 {
   margin-left: 40%;
@@ -129,7 +133,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 60%;
   font-size: 12px;
 }
-/* Contenedor 3 ORIGEN */
+/* Contenedor 3: AVICULTURA DE MUNTANYA */
 .logo-cont3
 {
   margin-left: 40%;
@@ -142,11 +146,23 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 60%;
   font-size: 12px;
 }
-.cont3-animacion
+.animado
 {
   opacity: 0;
   transition: all 0.5s;
-  
+}
+
+/* Contenedor 4: CRIA PRÒPIA */
+.texto-cont4
+{
+width: 60%;
+margin-right: 5%;
+text-align: justify;
+font-size: 12px;
+}
+.conten4
+{
+  z-index: -99;
 }
 }
 
