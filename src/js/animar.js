@@ -5,8 +5,9 @@ function mostrarScroll()
     let scrollTop = document.documentElement.scrollTop;
     for (var i=0; i < animado.length; i++)
     {
-        let alturaAnimado = animado[i].offsettop;
-        if(alturaAnimado - 300 < scrollTop)
+        //let alturaAnimado = animado[i].offsettop;
+        let alturaAnimado = 300;
+        if(alturaAnimado - 100 < scrollTop)
         {
             animado[i].style.opacity = 1;
         }
