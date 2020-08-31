@@ -9,6 +9,11 @@ Large Desktops       ≥1200px*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 
+body 
+{
+  scrollbar-width: none
+}
+::-webkit-scrollbar { display: none; }
 .selector-for-some-widget 
 {
     box-sizing: content-box;
@@ -207,6 +212,29 @@ body
   letter-spacing: 0.07em;
   color: #4A3B3B;
 }
+/* Contenedor 9: TRANSPORTE */
+.conten9
+{
+  position: relative;
+  z-index: -99;
+}
+.texto-cont9
+{
+  position: absolute;
+  top: 35%; 
+  left: 5%; 
+  width: 90%;
+  /* Pargraph */
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #4A3B3B;
+}
 
 @media (min-width: 768px)
 {
@@ -281,9 +309,9 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 .texto-cont3 
 {
-  width: 663.96px;
+  width: 46%;
   left: 89.76px;
-  top: 377.36px;
+  top: 200px;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
@@ -296,9 +324,38 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .animado
 {
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 1s;
 }
-
+.mostrarArriba
+{
+  animation: mostrarArriba 1s;
+}
+@keyframes mostrarArriba
+{
+  0%
+  {
+    transform: translateY(60px);
+  }
+  100%
+  {
+    transform: translateY(0px);
+  }
+}
+.mostrarDerecha
+{
+  animation: mostrarDerecha 1s;
+}
+@keyframes mostrarDerecha
+{
+  0%
+  {
+    transform: translateX(-60px);
+  }
+  100%
+  {
+    transform: translateX(0px);
+  }
+}
 /* Contenedor 4: CRIA PRÒPIA */
 .conten4
 {
@@ -361,8 +418,25 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .texto-cont7
 {
   position: absolute;
-  width: 1192.69px;
-  height: 229.1px;
+  width: 83%;
+  left: 115.84px;
+  top: 490.94px;
+  /* Pargraph */
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #4A3B3B;
+}
+/* Contenedor 9: TRANSPORTE */
+.texto-cont9
+{
+  position: absolute;
+  width: 83%;
   left: 115.84px;
   top: 490.94px;
   /* Pargraph */
