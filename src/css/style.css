@@ -6,22 +6,20 @@ Tablet               ≥768px
 Medium Desktops      ≥992px
 Large Desktops       ≥1200px*/
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 
 body 
 {
-  scrollbar-width: none
+  scrollbar-width: none;
+  margin: 0px;
+  padding: 0px;
 }
 ::-webkit-scrollbar { display: none; }
 .selector-for-some-widget 
 {
     box-sizing: content-box;
-}
-body
-{
-  margin: 0px;
-  padding: 0px;
 }
 .container-fluid
 {
@@ -37,6 +35,32 @@ body
 {
   margin:0%;
   padding: 0%;
+}
+.anchopant
+{
+  width: 100%;
+}
+/* Contenedor 1 PIRINEOS */
+.conten1
+{
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
+}
+.texto-cont1 
+{
+  position: absolute;    /* posición absolute con respecto al padre */
+  top: 35%; 
+  left: 5%; 
+  width: 90%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #4A3B3B;
 }
 /* Contenedor 2 ORIGEN */
 .conten2
@@ -57,7 +81,7 @@ body
   top: 35%; 
   left: 5%; 
   width: 90%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -65,38 +89,62 @@ body
   /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
-  color: #4A3B3B;
+  color: #ffffff;
 }
 
-/* Contenedor 3 AVICULTURA DE MUNTANYA ORIGEN */
+/* Contenedor 3 AVICULTURA DE MUNTANYA*/
 .conten3
 {
   position: relative;    /* para poder posicionar el texto de forma absoluta */
   display: inline-block; /* para que solo ocupe el ancho de la imagen */
   z-index: -99;
+  width: 100%;
+}
+.logo-cont3
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.titulo-cont3
+{
+  width: 100%;
+  left: 6%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 75px;
+  color: #FFFFFF;
+  text-align: center;
 }
 .texto-cont3 
 {
   position: absolute;    /* posición absolute con respecto al padre */
-  top: 5%; 
+  top: 25%; 
   left: 5%; 
   width: 90%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
   /* or 37px */
   letter-spacing: 0.07em;
-  color: #4A3B3B;
-  text-align: justify;
+  color: #FFFFFF;
+  text-align: justify ;
 }
 
 /* Contenedor 4: CRIA PRÒPIA */
+.conten4
+{
+  width: 100%;
+}
 .texto-cont4
 {
   text-align: justify;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -106,16 +154,20 @@ body
   color: #4A3B3B;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+}
 }
 
 /* Contenedor 5: ALIMENTACIÓ ECOLÒGICA */
+.conten5
+{
+  width: 100%;
+}
 .texto-cont5
 {
   padding-top:5%;
   padding-left: 5%;
   padding-right: 5%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 9px;
@@ -130,7 +182,7 @@ body
 .texto-cont6
 {
   padding: 7%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -179,7 +231,7 @@ body
 .texto-cont6
 {
   padding: 3%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -202,7 +254,7 @@ body
   left: 5%; 
   width: 90%;
   /* Pargraph */
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -225,7 +277,7 @@ body
   left: 5%; 
   width: 90%;
   /* Pargraph */
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -278,6 +330,22 @@ transition:all ease .8s;
 filter: alpha(opacity=80);
 opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
+/* Contenedor 1: Inicio Pirineos */
+.texto-cont1 
+{
+  top: 40%; 
+  left: 20%; 
+  width: 60%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 105px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: white;
+}
 
 /* Contenedor 2: ORIGEN */
 .logo-cont2
@@ -289,10 +357,10 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 .texto-cont2 
 {
-  top: 40%; 
-  left: 20%; 
-  width: 60%;
-  font-family: Raleway;
+  top: 43%; 
+  left: 27%; 
+  width: 47%;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -300,31 +368,47 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
-  color: #4A3B3B;
+  color: #ffffff;
 }
 /* Contenedor 3: AVICULTURA DE MUNTANYA */
 .logo-cont3
 {
- 
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.titulo-cont3
+{
+  width: 100%;
+  left: 6%;
+  padding-bottom: 5%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
 }
 .texto-cont3 
 {
-  width: 46%;
-  left: 89.76px;
-  top: 200px;
-  font-family: Raleway;
+  width: 40%;
+  left: 6%;
+  top: 43%;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
   /* or 37px */
   letter-spacing: 0.07em;
-  color: #4A3B3B;
+  color: #ffffff;
+  text-align: justify;
 }
 .animado
 {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .mostrarArriba
 {
@@ -343,7 +427,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 .mostrarDerecha
 {
-  animation: mostrarDerecha 1s;
+  animation: mostrarDerecha 0.5s;
 }
 @keyframes mostrarDerecha
 {
@@ -360,15 +444,13 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .conten4
 {
   z-index: -99;
+  width: 100%;
 }
 .texto-cont4
 {
   width: 60%;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom: 3%;
   text-align: justify;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -382,13 +464,14 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .conten5
 {
   z-index: -99;
+  width: 100%;
 }
 .texto-cont5
 {
-  padding-top:50% ;
+  padding-top:30% ;
   padding-left: 8%;
   padding-right: 8%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -403,7 +486,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .texto-cont6
 {
   padding: 5%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -422,7 +505,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   left: 115.84px;
   top: 490.94px;
   /* Pargraph */
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -440,7 +523,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   left: 115.84px;
   top: 490.94px;
   /* Pargraph */
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
