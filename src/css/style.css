@@ -350,6 +350,29 @@ body
   letter-spacing: 0.07em;
   color: #4A3B3B;
 }
+/* Contenedor 10: CONTACTO (movil)*/
+.conten9
+{
+  position: relative;
+  z-index: -99;
+}
+.texto-cont10
+{
+  position: absolute;
+  top: 35%; 
+  left: 5%; 
+  width: 90%;
+  /* Pargraph */
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #4A3B3B;
+}
 
 @media (min-width: 768px)
 {
@@ -654,7 +677,29 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   letter-spacing: 0.07em;
   color: #FFFFFF;
 }
-/* Contenedor 9: TRANSPORTE */
+/* Contenedor 8: TRANSPORTE */
+.conten8
+{
+  position: relative;
+  z-index: -99;
+}
+.texto-cont8
+{
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  /* Pargraph */
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color:red;
+}
+/* Contenedor 9: OUS FRESCOS (pantalla) */
 .texto-cont9
 {
   position: absolute;
@@ -671,6 +716,23 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   text-align: center;
   letter-spacing: 0.07em;
   color: #4A3B3B;
+}
+/* Contenedor 10: Contacto (Pantalla) */
+.texto-cont10
+{
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  /* Pargraph */
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 155.4%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: red;
 }
 }
 
