@@ -92,7 +92,7 @@ body
   color: #ffffff;
 }
 
-/* Contenedor 3 AVICULTURA DE MUNTANYA*/
+/* Contenedor 3 AVICULTURA DE MUNTANYA (movil)*/
 .conten3
 {
   position: relative;    /* para poder posicionar el texto de forma absoluta */
@@ -136,10 +136,19 @@ body
   text-align: justify ;
 }
 
-/* Contenedor 4: CRIA PRÒPIA */
+/* Contenedor 4: CRIA PRÒPIA (movil)*/
 .conten4
 {
   width: 100%;
+}
+.logo-cont4
+{
+  position: relative;
+  width: auto;
+  left: 6%;
+  top: 7%;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 .texto-cont4
 {
@@ -149,7 +158,6 @@ body
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   letter-spacing: 0.07em;
   color: #4A3B3B;
   padding-left: 5%;
@@ -157,16 +165,38 @@ body
 }
 }
 
-/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA */
+/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (movil)*/
 .conten5
 {
   width: 100%;
 }
+.logo-cont5
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.titulo-cont5
+{
+  position: absolute;
+  width: 74%;
+  left: 10%;
+  top: 25%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 75px;
+  color: black;
+  text-align: center;
+}
 .texto-cont5
 {
-  padding-top:5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  position: absolute;
+  width: 84%;
+  left: 10%;
+  top: 45%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -178,16 +208,24 @@ body
   text-align: justify;
 }
 
-/* Contenedor 6: LA GRANJA */
+/* Contenedor 6: LA GRANJA (movil)*/
+.titulo-cont6
+{
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4A3B3B;
+  text-align: center;
+}
 .texto-cont6
 {
-  padding: 7%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
   color: #4A3B3B;
@@ -241,30 +279,55 @@ body
   letter-spacing: 0.07em;
   color: #4A3B3B;
 }
-/* Contenedor 7: MEDIAMBIENT */
+/* Contenedor 7: MEDIAMBIENT (movil)*/
 .conten7
 {
   position: relative;
   z-index: -99;
 }
+.logo-cont7
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.logo-certif
+{
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+.titulo-cont7
+{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 30%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
 .texto-cont7
 {
   position: absolute;
-  top: 35%; 
-  left: 5%; 
-  width: 90%;
+  width: 70%;
+  top: 50%; 
+  left: 25%; 
   /* Pargraph */
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
-  color: #4A3B3B;
+  color: #FFFFFF;
 }
-/* Contenedor 9: TRANSPORTE */
+/* Contenedor 9: OUS FRESCOS (movil)*/
 .conten9
 {
   position: relative;
@@ -331,6 +394,13 @@ filter: alpha(opacity=80);
 opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 /* Contenedor 1: Inicio Pirineos */
+.logo-cont1
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
 .texto-cont1 
 {
   top: 40%; 
@@ -347,7 +417,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   color: white;
 }
 
-/* Contenedor 2: ORIGEN */
+/* Contenedor 2: ORIGEN (pantalla)*/
 .logo-cont2
 {
   position: absolute;    /* posición absolute con respecto al padre */
@@ -370,7 +440,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   letter-spacing: 0.07em;
   color: #ffffff;
 }
-/* Contenedor 3: AVICULTURA DE MUNTANYA */
+/* Contenedor 3: AVICULTURA DE MUNTANYA (pantalla)*/
 .logo-cont3
 {
   position: absolute;
@@ -400,7 +470,6 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
-  /* or 37px */
   letter-spacing: 0.07em;
   color: #ffffff;
   text-align: justify;
@@ -440,7 +509,15 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
     transform: translateX(0px);
   }
 }
-/* Contenedor 4: CRIA PRÒPIA */
+/* Contenedor 4: CRIA PRÒPIA (pantalla)*/
+.logo-cont4
+{
+  position: relative;
+  width: auto;
+  left: 6%;
+  top: 7%;
+  margin-top: 4%;
+}
 .conten4
 {
   z-index: -99;
@@ -448,72 +525,131 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 .texto-cont4
 {
-  width: 60%;
-  text-align: justify;
+  top: 15%;
+  width: 70%;
+  margin-left: 15%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
-  /* or 37px */
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
-}
-
-/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA */
-.conten5
-{
-  z-index: -99;
-  width: 100%;
-}
-.texto-cont5
-{
-  padding-top:30% ;
-  padding-left: 8%;
-  padding-right: 8%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 155.4%;
-  /* or 37px */
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
-  text-align: justify;
-}
-
-/* Contenedor 6: LA GRANJA */
-.texto-cont6
-{
-  padding: 5%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
   color: #4A3B3B;
 }
 
-/* Contenedor 7: MEDIAMBIENT */
+/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (pantalla)*/
+.conten5
+{
+  width: 100%;
+  z-index: -99;
+}
+.logo-cont5
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.titulo-cont5
+{
+  position: absolute;
+  width: 74%;
+  left: 10%;
+  top: 35%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  color: #4A3B3B;
+  text-align: center;
+}
+.texto-cont5
+{
+  position: absolute;
+  width: 76%;
+  left: 10%;
+  top: 43%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 155.4%;
+  letter-spacing: 0.07em;
+  color: #4A3B3B;
+}
+
+/* Contenedor 6: LA GRANJA (pantalla)*/
+.titulo-cont6
+{
+  width: 100%;
+  top: 65%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  color: #4A3B3B;
+  text-align: center;
+}
+.texto-cont6
+{
+  width: 90%;
+  top: 70%;
+  margin-left: 5%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 155.4%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: ##4A3B3B;
+}
+
+/* Contenedor 7: MEDIAMBIENT (pantalla)*/
+.logo-cont7
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.logo-certif
+{
+  position: absolute;
+  left: 58%;
+  top: 30%;
+}
+.titulo-cont7
+{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
 .texto-cont7
 {
   position: absolute;
-  width: 83%;
-  left: 115.84px;
-  top: 490.94px;
+  width: 55%;
+  left:35%;
+  top: 50%;
   /* Pargraph */
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
-  color: #4A3B3B;
+  color: #FFFFFF;
 }
 /* Contenedor 9: TRANSPORTE */
 .texto-cont9
