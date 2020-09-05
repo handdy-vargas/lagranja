@@ -368,7 +368,7 @@ ul li
 {
 position: relative; /*Para poder ubicar la info dentro de la caja*/
 float: right;
-height: 20px;
+height: 22px;
 }
 a.nounderline:link
 {
@@ -380,10 +380,13 @@ right: 18%; /*Desplazamos a partir de la esquina superior izquierda*/
 zoom: 1;
 filter: alpha(opacity=0); /*Opacidad Para IE */
 opacity: 0; /*Inicialmente transparente */
-padding: 5px;
-color: red;
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: normal;
+color: #C4C4C4;
 font-weight: bold;
 font-size: 16px;
+padding: 5px;
 -moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
 -webkit-transition:all ease .8s ;
 transition:all ease .8s;
