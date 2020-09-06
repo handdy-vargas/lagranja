@@ -36,6 +36,16 @@ body
   margin:0%;
   padding: 0%;
 }
+.col-sm-12
+{
+  padding: 0%;
+  margin: 0%;
+}
+.col-md-6
+{
+  padding: 0%;
+  margin: 0%;
+}
 .anchopant
 {
   width: 100%;
@@ -57,10 +67,9 @@ body
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
-  color: #4A3B3B;
+  color: white;
 }
 /* Contenedor 2 ORIGEN */
 .conten2
@@ -86,7 +95,6 @@ body
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
   color: #ffffff;
@@ -130,7 +138,6 @@ body
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   letter-spacing: 0.07em;
   color: #FFFFFF;
   text-align: justify ;
@@ -163,49 +170,48 @@ body
   padding-left: 5%;
   padding-right: 5%;
 }
-}
+
 
 /* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (movil)*/
-.conten5
+.img-cont5
 {
-  width: 100%;
+  position: relative;
+  z-index: -99;
 }
 .logo-cont5
 {
   position: absolute;
-  width: auto;
-  left: 6%;
-  top: 7%;
+  width: 20%;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 .titulo-cont5
 {
   position: absolute;
-  width: 74%;
-  left: 10%;
-  top: 25%;
+  width: 100%;
+  margin-top: 35%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 15px;
   line-height: 75px;
-  color: black;
+  color: white;
   text-align: center;
 }
 .texto-cont5
 {
-  position: absolute;
-  width: 84%;
-  left: 10%;
-  top: 45%;
+  position: absolute;    /* posición absolute con respecto al padre */
+  width: 80%;
+  margin-top: 50%;
+  margin-left: 10%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 9px;
   line-height: 155.4%;
-  /* or 37px */
   letter-spacing: 0.07em;
-  color: #4A3B3B;
-  text-align: justify;
+  color: white;
+  text-align: center;
 }
 
 /* Contenedor 6: LA GRANJA (movil)*/
@@ -274,7 +280,6 @@ body
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
   color: #4A3B3B;
@@ -288,23 +293,24 @@ body
 .logo-cont7
 {
   position: absolute;
-  width: auto;
+  width: 15%;
   left: 6%;
   top: 7%;
 }
 .logo-certif
 {
   position: absolute;
-  left: 50%;
+  width: 12%;
+  left: 48%;
   top: 15%;
 }
 .titulo-cont7
 {
   position: absolute;
   width: 100%;
-  left: 50%;
-  top: 30%;
-  font-family: Raleway;
+  left: 40%;
+  top: 20%;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -314,18 +320,24 @@ body
 .texto-cont7
 {
   position: absolute;
-  width: 70%;
-  top: 50%; 
-  left: 25%; 
+  width: 90%;
+  top: 45%; 
+  left: 5%; 
   /* Pargraph */
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 9.5px;
   line-height: 155.4%;
   text-align: center;
   letter-spacing: 0.07em;
   color: #FFFFFF;
+}
+/* Contenedor 8: ELS NOSTRES OUS (movil)*/
+.conten8
+{
+  position: relative;
+  z-index: -99;
 }
 /* Contenedor 9: OUS FRESCOS (movil)*/
 .conten9
@@ -333,10 +345,30 @@ body
   position: relative;
   z-index: -99;
 }
+.logo-cont9
+{
+  position: absolute;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.titulo-cont9
+{
+  position: absolute;
+  width: 40%;
+  top:30%;
+  left: 40%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 75px;
+  color: #4A3B3B;
+}
 .texto-cont9
 {
   position: absolute;
-  top: 35%; 
+  top: 55%; 
   left: 5%; 
   width: 90%;
   /* Pargraph */
@@ -345,33 +377,102 @@ body
   font-weight: normal;
   font-size: 10px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
   color: #4A3B3B;
 }
 /* Contenedor 10: CONTACTO (movil)*/
-.conten9
+.formulario
 {
-  position: relative;
-  z-index: -99;
+  width: 100%;
+  height: auto;
+  background-image: url("../images/cont10.png");
+  background-size: cover;
 }
-.texto-cont10
+form
 {
-  position: absolute;
-  top: 35%; 
-  left: 5%; 
-  width: 90%;
-  /* Pargraph */
+  width: 100%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+}
+.titulo-cont10
+{
+  margin: 0;
+  color: #4A3B3B;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  margin-bottom: 50px;
+}
+ol
+{
+  list-style: none;
+}
+ol li label
+{
+  width:30%;
+  padding-top: 1%;
+  float: left;
+  text-align: left;
+  font-size: 10px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 155.4%;
-  /* or 37px */
-  text-align: center;
-  letter-spacing: 0.07em;
+  color: #000000;
+}
+.input, textarea
+{
+  width: 65%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size:24px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border: none;
+  background: rgba(251, 251, 251, 0.8);
   color: #4A3B3B;
+}
+textarea
+{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+.aviso
+{
+  padding: 0;
+  margin: 0;
+  margin-left: 30%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size:10px;
+  color:black
+}
+#boton
+{
+  width: 18%;
+  background: black;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size:10px;
+  color: white;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+#boton:hover
+{
+  cursor: pointer;
 }
 
 @media (min-width: 768px)
@@ -419,7 +520,7 @@ transition:all ease .8s;
 filter: alpha(opacity=80);
 opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
-/* Contenedor 1: Inicio Pirineos */
+/* Contenedor 1: Inicio Pirineos (pantalla)*/
 .logo-cont1
 {
   position: absolute;
@@ -432,15 +533,8 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top: 40%; 
   left: 20%; 
   width: 60%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 105px;
   line-height: 155.4%;
-  /* or 37px */
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: white;
 }
 
 /* Contenedor 2: ORIGEN (pantalla)*/
@@ -456,15 +550,8 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top: 43%; 
   left: 27%; 
   width: 47%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
-  /* or 37px */
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: #ffffff;
 }
 /* Contenedor 3: AVICULTURA DE MUNTANYA (pantalla)*/
 .logo-cont3
@@ -479,26 +566,16 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 100%;
   left: 6%;
   padding-bottom: 5%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 64px;
-  line-height: 75px;
-  color: #FFFFFF;
 }
 .texto-cont3 
 {
   width: 40%;
   left: 6%;
   top: 43%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
   letter-spacing: 0.07em;
-  color: #ffffff;
-  text-align: justify;
 }
 .animado
 {
@@ -552,21 +629,18 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .texto-cont4
 {
   top: 15%;
-  width: 70%;
-  margin-left: 15%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 3%;
   font-size: 24px;
   line-height: 155.4%;
   text-align: center;
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
 }
 
 /* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (pantalla)*/
 .conten5
 {
+  position: relative;
   width: 100%;
   z-index: -99;
 }
@@ -583,13 +657,11 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 74%;
   left: 10%;
   top: 35%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  padding: 0%;
+  margin: 0%;
   font-size: 64px;
   line-height: 75px;
   color: #4A3B3B;
-  text-align: center;
 }
 .texto-cont5
 {
@@ -597,12 +669,10 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 76%;
   left: 10%;
   top: 43%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  padding: 0%;
+  margin: 0%;
   font-size: 24px;
   line-height: 155.4%;
-  letter-spacing: 0.07em;
   color: #4A3B3B;
 }
 
@@ -611,27 +681,16 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 {
   width: 100%;
   top: 65%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 64px;
   line-height: 75px;
-  color: #4A3B3B;
-  text-align: center;
 }
 .texto-cont6
 {
   width: 90%;
   top: 70%;
   margin-left: 5%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 155.4%;
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: ##4A3B3B;
 }
 
 /* Contenedor 7: MEDIAMBIENT (pantalla)*/
@@ -645,6 +704,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .logo-certif
 {
   position: absolute;
+  width: auto;
   left: 58%;
   top: 30%;
 }
@@ -654,12 +714,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 100%;
   left: 50%;
   top: 40%;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
   font-size: 64px;
-  line-height: 75px;
-  color: #FFFFFF;
 }
 .texto-cont7
 {
@@ -667,22 +722,9 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 55%;
   left:35%;
   top: 50%;
-  /* Pargraph */
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
-  line-height: 155.4%;
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: #FFFFFF;
 }
-/* Contenedor 8: TRANSPORTE */
-.conten8
-{
-  position: relative;
-  z-index: -99;
-}
+/* Contenedor 8: ELS NOSTRES OUS (pantalla) */
 .texto-cont8
 {
   position: absolute;
@@ -694,45 +736,89 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   font-weight: normal;
   font-size: 100px;
   line-height: 155.4%;
-  /* or 37px */
   text-align: center;
   letter-spacing: 0.07em;
   color:red;
 }
 /* Contenedor 9: OUS FRESCOS (pantalla) */
-.texto-cont9
+.logo-cont9
 {
   position: absolute;
-  width: 83%;
-  left: 115.84px;
-  top: 490.94px;
-  /* Pargraph */
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  width: auto;
+  left: 6%;
+  top: 7%;
+}
+.titulo-cont9
+{
+  position: absolute;
+  width: 40%;
+  left: 35%;
+  top: 50%;
+  font-size: 64px;
+}
+.texto-cont9 
+{
+  width: 70%;
+  top: 60%; 
+  left: 15%; 
   font-size: 24px;
   line-height: 155.4%;
-  /* or 37px */
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
 }
-/* Contenedor 10: Contacto (Pantalla) */
-.texto-cont10
+/* Contenedor 10: Contacto (Pantalla)*/
+.formulario
 {
-  position: absolute;
   width: 100%;
-  top: 35%;
-  /* Pargraph */
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 90px;
-  line-height: 155.4%;
-  /* or 37px */
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: red;
+  height: auto;
+}
+form
+{
+  width: 40%;
+  height: auto;
+}
+.titulo-cont10
+{
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+ol li label
+{
+  width:35%;
+  padding-top: 1%;
+  font-size: 18px;
+}
+.input, textarea
+{
+  width: 55%;
+  margin-bottom: 20px;
+  font-size:24px;
+}
+textarea
+{
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+}
+.aviso
+{
+  padding: 0;
+  margin: 0;
+  margin-left: 35%;
+  font-size:16px;
+}
+#boton
+{
+  width: 20%;
+  padding: 10px;
+  margin-left: 40%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size:18px;
+  line-height: 24px;
+}
+#boton:hover
+{
+  cursor: pointer;
 }
 }
 

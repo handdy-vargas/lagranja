@@ -101,6 +101,14 @@
                         </a>
                     </div>
                 </li>
+                <li>
+                    <div class="caja">
+                        <a href="#cont10" class="nounderline">
+                            <span class="info">Contacte</span>
+                            <img src="images/balance.png" />
+                        </a>
+                    </div>
+                </li>
             </ul>
             </div>
         </nav>
@@ -121,8 +129,8 @@
         <!--CONTENEDOR 2: Origen-->
         <div id="cont2" class="container-fluid">
             <div class="row conten2">
-                <img class="img-fluid anchopant" src="images/cont2.png" alt="Origen">
                 <img class="img-fluid logo-cont2" src="images/logo.png" alt="Logo Ous del Rialb">
+                <img class="img-fluid anchopant" src="images/cont2.png" alt="Origen">
                 <div class="texto-cont2">
                     <p data-i18n="cont2.texto"></p> 
                 </div>
@@ -136,10 +144,7 @@
                 <img class="img-fluid logo-cont3" src="images/logo.png" alt="Logo Ous del Rialb">
                 <div class="texto-cont3 animado">
                     <h1 class="titulo-cont3">Avicultura de muntanya</h1>
-                    <p>
-                    Actualment Dolors i Jordi porten la direcció de la granja, uns enamorats del territori i la seva pasió per les gallines, especialitzats en l’avicultura alternativa de l’ou camper de muntanya.
-                    El resultat d’una gallina que viu a l’aire lliure, en un entorn de muntanya, on surt a caminar, a gratar, i a complementar la seva dieta amb el picoteig pel camp és un Ou Camper de Rialb.
-                    </p> 
+                    <p>Actualment Dolors i Jordi porten la direcció de la granja, uns enamorats del territori i la seva pasió per les gallines, especialitzats en l’avicultura alternativa de l’ou camper de muntanya.</br>El resultat d’una gallina que viu a l’aire lliure, en un entorn de muntanya, on surt a caminar, a gratar, i a complementar la seva dieta amb el picoteig pel camp és un Ou Camper de Rialb.</p> 
                 </div>
             </div>
         </div>
@@ -174,16 +179,14 @@
         
          <!--CONTENEDOR 5: ALIMENTACIÓ ECOLÒGICA-->
         <div id="cont5" class="container-fluid">
-            <div class="row">
-               <div class="col conten5">
+            <div class="row conten5">
+               <div class="col-sm-12 col-md-6">
                 <img class="img-fluid logo-cont5" src="images/logo.png" alt="Logo Ous del Rialb">   
                 <h1 class="titulo-cont5">Alimentació ecològica</h1>
-                <p class="texto-cont5 animado">El fet de créixer des del primer dia a casa nostra, permet assegurar el millor per les nostres gallines i complementar la seva dieta de picoteig amb una alimentació ecològica i lliure de
-                    cereals transgènics. </br>
-                    Així l’ou ecològic de La Nostra Terra, és completament natural i amb grans valors gastronòmics, d’aquells que menjaven els nostres besavis quan tot era fet a casa.</p>
+                <p class="texto-cont5 animado">El fet de créixer des del primer dia a casa nostra, permet assegurar el millor per les nostres gallines i complementar la seva dieta de picoteig amb una alimentació ecològica i lliure de cereals transgènics.</br>Així l’ou ecològic de La Nostra Terra, és completament natural i amb grans valors gastronòmics, d’aquells que menjaven els nostres besavis quan tot era fet a casa.</p>
                </div>
-                <div class="col conten5">
-                    <img class="img-fluid anchopant" src="images/cont5.png" alt="Alimentación ecologica">
+                <div class="col-sm-12 col-md-6">
+                    <img class="img-fluid anchopant img-cont5" src="images/cont5.png" alt="Alimentación ecologica">
                 </div>
             </div>
         </div>
@@ -232,20 +235,29 @@
         <!--CONTENEDOR 9: OUS FRESCOS-->
         <div id="cont9" class="container-fluid">
             <div class="row conten9">
+                <img class="img-fluid logo-cont9" src="images/logo.png" alt="Logo Ous del Rialb">
                 <img class="img-fluid anchopant" src="images/cont9.png" alt="">
+                <h1 class="titulo-cont9">OUS FRESCOS</h1>
                 <p class="texto-cont9">
-                    Recollim cada dia els ous de les nostres gallines, i així, acompanyats d’una distribució pròpia, garantim la màxima rapidesa desde la posta de l’ou fins al consum, així mantenim tota la seva frescor i propietats.
+                Recollim cada dia els ous de les nostres gallines, i així, acompanyats d’una distribució pròpia, garantim la màxima rapidesa desde la posta de l’ou fins al consum, així mantenim tota la seva frescor i propietats.
                 </p>
             </div>
         </div>
 
         <!--CONTENEDOR 10: CONTACTO-->
-        <div id="cont9" class="container-fluid">
-            <div class="row conten9">
-                <img class="img-fluid anchopant" src="images/cont10.png" alt="">
-                <p class="texto-cont10">
-                FORMULARIO DE CONTACTO: </br> under construction
-                </p>
+        <div id="cont10" class="container-fluid">
+            <div class="row formulario">
+                <form action="">
+                    <h2 class="titulo-cont10">Formulari de contacte</h2>
+                    <ol>
+                        <li><label for="nombre">Nom i Cognom:</label><input class="input" type="text" name="nombre"></li>
+                        <li><label for="correo">Correu electrònic:</label><input class="input" type="text" name="correo"></li>
+                        <li><label for="telefono">Telèfon de contacte:</label><input class="input" type="text" name="telefono"></li>
+                        <li><label for="mensaje">Missatge:</label><textarea name="mensaje"></textarea></li>
+                        <li class="aviso"><input type="checkbox"> <span>Accepta l'avís legal i la política de privacitat.</span></li>
+                    </ol>
+                    <input type="button" value="Enviar" id="boton">
+                </form>
             </div>
         </div>
         
