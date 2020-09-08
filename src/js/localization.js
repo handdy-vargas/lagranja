@@ -9,7 +9,7 @@ resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backen
         },
         cont2:
         {
-            texto:'Ja som tres generacions d’una família dedicades a l’avicultura,\ndesde l’any XXXX. Les perspectives són bones perquè sembla\nque hi ha una quarta generació que voldrà continuar amb aquest negoci familiar.\nA tots ens apassionen els animals i poder contar amb la\nconfiança dels nostres clients.\nEl resultat d’aquesta passió i dedicació és un ou de qualitat,\nadaptat al clima fresc de la muntanya del prepirineu de Lleida.'
+            texto:'Ja som tres generacions d’una família dedicades a l’avicultura, desde l’any XXXX. Les perspectives són bones perquè sembla que hi ha una quarta generació que voldrà continuar amb aquest negoci familiar. A tots ens apassionen els animals i poder contar amb la confiança dels nostres clients.El resultat d’aquesta passió i dedicació és un ou de qualitat, adaptat al clima fresc de la muntanya del prepirineu de Lleida.'
         }
     }
     },

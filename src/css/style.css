@@ -6,7 +6,7 @@ Tablet               ≥768px
 Medium Desktops      ≥992px
 Large Desktops       ≥1200px*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 
@@ -71,34 +71,54 @@ body
   letter-spacing: 0.07em;
   color: white;
 }
-/* Contenedor 2 ORIGEN */
+/* Contenedor 2: ORIGEN (movil) */
 .conten2
 {
   position: relative;    /* para poder posicionar el texto de forma absoluta */
   z-index: -99;
 }
-.logo-cont2
+.titpos-cont2
 {
-  position: absolute;    /* posición absolute con respecto al padre */
-  top: 5%; 
-  left: 38%; 
-  width: 20%;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+.titulo-cont2
+{
+  font-family: 'Gayathri', sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 135.4%;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+.textpos-cont2
+{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width:100%;
 }
 .texto-cont2 
-{
-  position: absolute;    /* posición absolute con respecto al padre */
-  top: 35%; 
-  left: 5%; 
-  width: 90%;
+{ 
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 155.4%;
+  font-size: 20px;
+  line-height: 130%;
   text-align: center;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.025em;
   color: #ffffff;
 }
+.logo-cont2
+{
+  position: absolute;
+  top: 70%; 
+  left: 43%;
+  width: auto;
+}
+
 
 /* Contenedor 3 AVICULTURA DE MUNTANYA (movil)*/
 .conten3
@@ -170,7 +190,6 @@ body
   padding-left: 5%;
   padding-right: 5%;
 }
-
 
 /* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (movil)*/
 .img-cont5
@@ -475,7 +494,7 @@ textarea
   cursor: pointer;
 }
 
-@media (min-width: 768px)
+@media (min-width: 992px)
 {
   /* menu lateral flotante */
 .menu
@@ -492,7 +511,7 @@ ul li
 {
 position: relative; /*Para poder ubicar la info dentro de la caja*/
 float: right;
-height: 22px;
+height: 25px;
 }
 a.nounderline:link
 {
@@ -504,13 +523,16 @@ right: 18%; /*Desplazamos a partir de la esquina superior izquierda*/
 zoom: 1;
 filter: alpha(opacity=0); /*Opacidad Para IE */
 opacity: 0; /*Inicialmente transparente */
-font-family: 'Raleway', sans-serif;
+font-family: Raleway;
 font-style: normal;
 font-weight: normal;
-color: #C4C4C4;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #D6D0D0;
 font-weight: bold;
 font-size: 16px;
-padding: 5px;
+padding-right: 20px;
 -moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
 -webkit-transition:all ease .8s ;
 transition:all ease .8s;
@@ -538,21 +560,45 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 
 /* Contenedor 2: ORIGEN (pantalla)*/
-.logo-cont2
+.conten2
 {
-  position: absolute;    /* posición absolute con respecto al padre */
-  top: 30%; 
-  left: 48%;
-  width: auto;
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
+}
+.titpos-cont2
+{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.titulo-cont2
+{
+  font-size: 90px;
+  line-height: 139.4%;
+  letter-spacing: 0.07em;
+}
+.textpos-cont2
+{
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width:20%;
 }
 .texto-cont2 
-{
-  top: 43%; 
-  left: 27%; 
-  width: 47%;
-  font-size: 24px;
-  line-height: 155.4%;
+{ 
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.025em;
 }
+.logo-cont2
+{
+  position: absolute;
+  top: 70%; 
+  left: 43%;
+  width: auto;
+}
+
 /* Contenedor 3: AVICULTURA DE MUNTANYA (pantalla)*/
 .logo-cont3
 {
@@ -566,14 +612,14 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   width: 100%;
   left: 6%;
   padding-bottom: 5%;
-  font-size: 64px;
+  font-size: 90px;
 }
 .texto-cont3 
 {
   width: 40%;
   left: 6%;
   top: 43%;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 155.4%;
   letter-spacing: 0.07em;
 }

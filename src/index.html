@@ -29,11 +29,11 @@
         <nav>
             <div class="menu">
             <ul>
-                <li>
+                <li class="onclick">
                     <div class="caja">
                         <a href="#cont1" class="nounderline">
                             <span class="info" data-i18n="menu.inici"></span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -41,7 +41,7 @@
                     <div class="caja">
                         <a href="#cont2" class="nounderline">
                             <span class="info" data-i18n="menu.origen"></span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -49,7 +49,7 @@
                     <div class="caja">
                         <a href="#cont3" class="nounderline">
                             <span class="info">Avicultura de muntanya</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -57,7 +57,7 @@
                     <div class="caja">
                         <a href="#cont4" class="nounderline">
                             <span class="info">Cria pròpia</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -65,7 +65,7 @@
                     <div class="caja">
                         <a href="#cont5" class="nounderline">
                             <span class="info">Alimentació ecologica</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -73,7 +73,7 @@
                     <div class="caja">
                         <a href="#cont6" class="nounderline">
                             <span class="info">La Granja</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -81,7 +81,7 @@
                     <div class="caja">
                         <a href="#cont7" class="nounderline">
                             <span class="info">Mediambient</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -89,7 +89,7 @@
                     <div class="caja">
                         <a href="#cont8" class="nounderline">
                             <span class="info">Els nostres ous</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -97,7 +97,7 @@
                     <div class="caja">
                         <a href="#cont9" class="nounderline">
                             <span class="info">Ous Frescos</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -105,7 +105,7 @@
                     <div class="caja">
                         <a href="#cont10" class="nounderline">
                             <span class="info">Contacte</span>
-                            <img src="images/balance.png" />
+                            <img src="images/menu.png" onmouseover="this.src='images/menuHover.png'" onmouseout="this.src='images/menu.png'"/>
                         </a>
                     </div>
                 </li>
@@ -128,15 +128,26 @@
 
         <!--CONTENEDOR 2: Origen-->
         <div id="cont2" class="container-fluid">
-            <div class="row conten2">
-                <img class="img-fluid logo-cont2" src="images/logo.png" alt="Logo Ous del Rialb">
-                <img class="img-fluid anchopant" src="images/cont2.png" alt="Origen">
-                <div class="texto-cont2">
-                    <p data-i18n="cont2.texto"></p> 
+            <div class="conten2">
+                <img class="img-fluid anchopant" src="images/cont2.png" alt="Origen">   
+                <div class="row">
+                    <div class="col-sm-3 col-md-2"></div>
+                    <div class="col-sm-6 col-md-8 titpos-cont2"><h1 class="titulo-cont2">ORIGEN</h1></div>
+                    <div class="col-sm-3 col-md-2"></div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-sm-1 col-md-1"></div>
+                    <div class="col-sm-10 col-md-10 textpos-cont2">
+                        <!-- <p data-i18n="cont2.texto"></p> -->
+                        <p class="texto-cont2">Ja som tres generacions d’una família dedicades a l’avicultura, desde l’any XXXX.</br> Les perspectives són bones perquè sembla que hi ha una quarta generació que voldrà continuar amb aquest negoci familiar.</br></br> A tots ens apassionen els animals i poder contar amb la confiança dels nostres clients.</br></br>El resultat d’aquesta passió i dedicació és un ou de qualitat, adaptat al clima fresc de la muntanya del prepirineu de Lleida.</p>
+                    </div>
+                    <div class="col-sm-1 col-md-1"></div>
+                </div>
+                <div class="row">
+                    <img class="img-fluid logo-cont2" src="images/logo.png" alt="Logo Ous del Rialb">
+                </div>
+            </div>            
         </div>
-
         <!--CONTENEDOR 3: AVICULTURA DE MUNTANYA-->
         <div id="cont3" class="container-fluid">
             <div class="row conten3">
@@ -247,16 +258,16 @@
         <!--CONTENEDOR 10: CONTACTO-->
         <div id="cont10" class="container-fluid">
             <div class="row formulario">
-                <form action="">
+                <form action="enviar.php" method="POST">
                     <h2 class="titulo-cont10">Formulari de contacte</h2>
                     <ol>
-                        <li><label for="nombre">Nom i Cognom:</label><input class="input" type="text" name="nombre"></li>
-                        <li><label for="correo">Correu electrònic:</label><input class="input" type="text" name="correo"></li>
-                        <li><label for="telefono">Telèfon de contacte:</label><input class="input" type="text" name="telefono"></li>
-                        <li><label for="mensaje">Missatge:</label><textarea name="mensaje"></textarea></li>
-                        <li class="aviso"><input type="checkbox"> <span>Accepta l'avís legal i la política de privacitat.</span></li>
+                        <li><label for="nombre">Nom i Cognom:</label><input class="input" type="text" name="nombre" required></li>
+                        <li><label for="correo">Correu electrònic:</label><input class="input" type="text" name="correo" required></li>
+                        <li><label for="telefono">Telèfon de contacte:</label><input class="input" type="text" name="telefono" required></li>
+                        <li><label for="mensaje">Missatge:</label><textarea name="mensaje" required></textarea></li>
+                        <li class="aviso"><input type="checkbox" name="checkbox" required> <span>Accepta l'avís legal i la política de privacitat.</span></li>
                     </ol>
-                    <input type="button" value="Enviar" id="boton">
+                    <input type="submit" value="Enviar" id="boton">
                 </form>
             </div>
         </div>
