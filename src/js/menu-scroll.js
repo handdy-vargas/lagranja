@@ -1,28 +1,30 @@
-let contenedores = new Array();
-contenedores[0] = {
-    element: $(".texto-cont3"),
-    animacion: "mostrarArriba"
-}
-animados[1] = {
-    element: $(".texto-cont5"),
-    animacion: "mostrarDerecha"
+function hoverItem(visibleItem)
+{
+    for (var i=10; i > 0; i--)
+    {
+        let menuitem = $("#menu-"+i);
+        let updatedSrc = "images/menu.png";
+        if (visibleItem === i)
+        {
+            updatedSrc = "images/menuHover.png";
+        }
+        menuitem.attr("src", updatedSrc)
+    }
 }
 
-function mostrarScroll()
+function menuScroll()
 {
     let scrollTop = document.documentElement.scrollTop;
-    for (var i=0; i < animados.length; i++)
+    for (var i=10; i > 0; i--)
     {
-        var animado = animados[i];
-        let containerId = animado.element.closest(".container-fluid");
-        let container = $(containerId);
-        let alturaAnimado = container.offset().top;
+        let container = $("#cont"+i);
+        let offsetContainer = container.offset().top;
         let alturaContainer = container.height();
-        if(alturaAnimado - (alturaContainer/3) < scrollTop)
+        if(offsetContainer - (alturaContainer/2) < scrollTop)
         {
-            animado.element.css('opacity', '1');
-            animado.element.addClass(animado.animacion);
+            hoverItem(i);
+            break;
         }
     }
 }
-window.addEventListener('scroll', mostrarScroll);
+window.addEventListener('scroll', menuScroll);
