@@ -50,7 +50,7 @@ body
 {
   width: 100%;
 }
-/* Contenedor 1 PIRINEOS (movil)*/
+/* Contenedor 1 PIRINEOS (móvil)*/
 .conten1
 {
   position: relative;    /*para poder posicionar el texto de forma absoluta*/
@@ -101,9 +101,9 @@ body
   color: white;
 }
 
-/* Contenedor 2: ORIGEN (movil) */
+/* Contenedor 2: ORIGEN (móvil) */
 
-/* Contenedor 3 AVICULTURA DE MUNTANYA (movil)*/
+/* Contenedor 3 AVICULTURA DE MUNTANYA (móvil)*/
 
 /* Contenedor 4: CRIA PRÒPIA (movil)*/
 .conten4
@@ -435,6 +435,9 @@ textarea
 {
   cursor: pointer;
 }
+
+/* PANTALLA MEDIANA */
+
 @media (min-width: 992px)
 {
 /* menu lateral flotante */
@@ -443,6 +446,7 @@ textarea
   position: fixed;
   right: 2%;
   top: 30%;
+  z-index: 1;
 }
 ul li
 {
@@ -450,9 +454,9 @@ ul li
 }
 .caja 
 {
-position: relative; /*Para poder ubicar la info dentro de la caja*/
-float: right;
-height: 25px;
+  position: relative; /*Para poder ubicar la info dentro de la caja*/
+  float: right;
+  height: 25px;
 }
 a.nounderline:link
 {
@@ -460,28 +464,28 @@ text-decoration:none;
 }
 .info 
 {
-right: 18%; /*Desplazamos a partir de la esquina superior izquierda*/
-zoom: 1;
-filter: alpha(opacity=0); /*Opacidad Para IE */
-opacity: 0; /*Inicialmente transparente */
-font-family: 'Raleway', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-color: #D6D0D0;
-font-weight: bold;
-font-size: 16px;
-padding-right: 20px;
--moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
--webkit-transition:all ease .8s ;
-transition:all ease .8s;
+  right: 18%; /*Desplazamos a partir de la esquina superior izquierda*/
+  zoom: 1;
+  filter: alpha(opacity=0); /*Opacidad Para IE */
+  opacity: 0; /*Inicialmente transparente */
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #D6D0D0;
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 20px;
+  -moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
+  -webkit-transition:all ease .8s ;
+  transition:all ease .8s;
 }
 .caja:hover .info 
 {
-filter: alpha(opacity=80);
-opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
+  filter: alpha(opacity=80);
+  opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 }
 
 /* Contenedor 1: Inicio Pirineos (pantalla mediana)*/
@@ -548,7 +552,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top:0;
   left:0;
   margin-left: 30%;
-  margin-top: 8%;
+  margin-top: 6%;
   text-align: center;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
@@ -565,7 +569,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top:0;
   left:0;
   margin-left: 30%;
-  margin-top: 15%;
+  margin-top: 13%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -582,9 +586,158 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top:0;
   left:0;
   margin-left: 45%;
-  margin-top: 48%;
+  margin-top: 46%;
 }
 
+/* Contenedor 3: AVICULTURA DE MUNTANYA (pantalla mediana)*/
+.conten3
+{
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
+}
+.titulo-cont3
+{
+  position: absolute;
+  width: 40%;
+  top:0;
+  left:0;
+  margin-left: 6%;
+  margin-top: 9%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 90%;
+  align-items: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+.subtitulo-cont3
+{
+  position: absolute;
+  width: 20%;
+  top:0;
+  left:0;
+  margin-left: 6%;
+  margin-top: 18%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 155.4%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.105em;
+  color: #FFFFFF;
+}
+.textoparraf-cont3
+{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.texto-cont3 
+{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 40%;
+  margin-left: 6%;
+  margin-top: 22%;
+}
+.animado
+{
+  opacity: 0;
+  transition: all 0.5s;
+}
+.mostrarArriba
+{
+  animation: mostrarArriba 3s;
+}
+@keyframes mostrarArriba
+{
+  0%
+  {
+    transform: translateY(60px);
+  }
+  100%
+  {
+    transform: translateY(0px);
+  }
+}
+
+/* Contenedor 4: CRIA PRÒPIA (pantalla)*/
+.bckg-cont4
+{
+  background: linear-gradient( #E5E5E5 65%, white 35%);
+  margin-bottom: 8%;
+}
+.titulo-cont4
+{
+  margin-top: 10%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+.subtitulo-cont4
+{
+  width: 95%;
+  margin-left: 7%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 113%;
+  letter-spacing: 0.105em;
+  color: #4A3B3B;
+}
+.textoparraf-cont4
+{
+  width: 95%;
+  margin-top: 4%;
+  margin-left: 7%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 176.5%;
+  letter-spacing: 0.025em;
+  color: #4A3B3B;
+}
+.collag-cont4
+{
+  margin-left: 1%;
+  margin-top: 8%;
+  width: 98%;
+  align:center;
+  z-index: -99;
+}
+.fade-in
+{
+  animation: fadeIn;
+  transition-delay: 10s;
+}
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
+
+/* PANTALLA GRANDE */
 }
 @media (min-width: 1400px)
 {
@@ -652,7 +805,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top:0;
   left:0;
   margin-left: 30%;
-  margin-top: 8%;
+  margin-top:4%;
   text-align: center;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
@@ -669,7 +822,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top:0;
   left:0;
   margin-left: 40%;
-  margin-top: 16%;
+  margin-top: 12%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -686,7 +839,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
   top:0;
   left:0;
   margin-left: 45%;
-  margin-top: 48%;
+  margin-top: 44%;
 }
 
 /* Contenedor 3: AVICULTURA DE MUNTANYA (pantalla gde)*/
@@ -694,13 +847,6 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 {
   position: relative;    /* para poder posicionar el texto de forma absoluta */
   z-index: -99;
-}
-.logo-cont3
-{
-  position: absolute;
-  width: auto;
-  left: 0%;
-  top: 0%;
 }
 .titulo-cont3
 {
@@ -759,7 +905,7 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
 .animado
 {
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 5s;
 }
 .mostrarArriba
 {
@@ -776,44 +922,72 @@ opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
     transform: translateY(0px);
   }
 }
-.mostrarDerecha
-{
-  animation: mostrarDerecha 0.5s;
-}
-@keyframes mostrarDerecha
-{
-  0%
-  {
-    transform: translateX(-60px);
-  }
-  100%
-  {
-    transform: translateX(0px);
-  }
-}
+
 /* Contenedor 4: CRIA PRÒPIA (pantalla)*/
-.logo-cont4
+.bckg-cont4
 {
-  position: relative;
-  width: auto;
-  left: 6%;
-  top: 7%;
-  margin-top: 4%;
+  background: linear-gradient( #E5E5E5 54%, white 46%);
+  height: auto;
 }
-.conten4
+.titulo-cont4
 {
-  z-index: -99;
-  width: 100%;
-}
-.texto-cont4
-{
-  top: 15%;
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 3%;
-  font-size: 24px;
-  line-height: 155.4%;
+  margin-top: 14%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 139.4%;
   text-align: center;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+.subtitulo-cont4
+{
+  width: 70%;
+  margin-left: 20%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 113%;
+  letter-spacing: 0.105em;
+  color: #4A3B3B;
+}
+.textoparraf-cont4
+{
+  width: 67%;
+  margin-top: 4%;
+  margin-left: 20%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 176.5%;
+  letter-spacing: 0.025em;
+  color: #4A3B3B;
+}
+.collag-cont4
+{
+  margin-left: 1%;
+  margin-top: 8%;
+  width: 98%;
+  align:center;
+  z-index: -99;
+}
+.fade-in
+{
+  animation: fadeIn;
+  transition-delay: 10s;
+}
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
 }
 
 /* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (pantalla)*/

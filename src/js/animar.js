@@ -4,6 +4,10 @@ animados[0] = {
     animacion: "mostrarArriba"
 }
 animados[1] = {
+    element: $(".texto-cont4"),
+    animacion: "fadeIn"
+}
+animados[2] = {
     element: $(".texto-cont5"),
     animacion: "mostrarDerecha"
 }
