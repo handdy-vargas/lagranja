@@ -106,200 +106,13 @@ body
 /* Contenedor 3 AVICULTURA DE MUNTANYA (móvil)*/
 
 /* Contenedor 4: CRIA PRÒPIA (movil)*/
-.conten4
-{
-  width: 100%;
-}
-.logo-cont4
-{
-  position: relative;
-  width: auto;
-  left: 6%;
-  top: 7%;
-  margin-top: 4%;
-  margin-bottom: 3%;
-}
-.texto-cont4
-{
-  text-align: justify;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 155.4%;
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
-  padding-left: 5%;
-  padding-right: 5%;
-}
 
 /* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (movil)*/
-.img-cont5
-{
-  position: relative;
-  z-index: -99;
-}
-.logo-cont5
-{
-  position: absolute;
-  width: 20%;
-  margin-top: 5%;
-  margin-left: 5%;
-}
-.titulo-cont5
-{
-  position: absolute;
-  width: 100%;
-  margin-top: 35%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 75px;
-  color: white;
-  text-align: center;
-}
-.texto-cont5
-{
-  position: absolute;    /* posición absolute con respecto al padre */
-  width: 80%;
-  margin-top: 50%;
-  margin-left: 10%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
-  line-height: 155.4%;
-  letter-spacing: 0.07em;
-  color: white;
-  text-align: center;
-}
 
 /* Contenedor 6: LA GRANJA (movil)*/
-.titulo-cont6
-{
-  width: 100%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  color: #4A3B3B;
-  text-align: center;
-}
-.texto-cont6
-{
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 155.4%;
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
-}
-/*Slider*/
-.slider
-{
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-.slider ul 
-{
-  display: flex;
-  padding: 0%;
-  width: 300%;
-  animation: cambio 15s infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.slider li
-{
-  width: 100%;
-  list-style: none;
-}
-.slider img
-{
-  width: 100%;
-}
-@keyframes cambio
-{
-  0%{margin-left: 0%;}
-  30%{margin-left: 0%;}
-/* 5% de 20s de tiempo de cambio de una imagen*/
-  35%{margin-left: -100%;}
-  65%{margin-left: -100%;}
 
-  70%{margin-left: -200%;}
-  100%{margin-left: -200%;}
-}
-.texto-cont6
-{
-  padding: 3%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 155.4%;
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: #4A3B3B;
-}
 /* Contenedor 7: MEDIAMBIENT (movil)*/
-.conten7
-{
-  position: relative;
-  z-index: -99;
-}
-.logo-cont7
-{
-  position: absolute;
-  width: 15%;
-  left: 6%;
-  top: 7%;
-}
-.logo-certif
-{
-  position: absolute;
-  width: 12%;
-  left: 48%;
-  top: 15%;
-}
-.titulo-cont7
-{
-  position: absolute;
-  width: 100%;
-  left: 40%;
-  top: 20%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 75px;
-  color: #FFFFFF;
-}
-.texto-cont7
-{
-  position: absolute;
-  width: 90%;
-  top: 45%; 
-  left: 5%; 
-  /* Pargraph */
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9.5px;
-  line-height: 155.4%;
-  text-align: center;
-  letter-spacing: 0.07em;
-  color: #FFFFFF;
-}
-/* Contenedor 8: ELS NOSTRES OUS (movil)*/
-.conten8
-{
-  position: relative;
-  z-index: -99;
-}
+
 /* Contenedor 9: OUS FRESCOS (movil)*/
 .conten9
 {
@@ -437,9 +250,14 @@ textarea
 }
 
 /* PANTALLA MEDIANA */
-
 @media (min-width: 992px)
 {
+/* Animaciones */
+.animado
+{
+  opacity: 0;
+  transition: all 5s;
+}
 /* menu lateral flotante */
 .menu
 {
@@ -670,11 +488,10 @@ text-decoration:none;
   }
 }
 
-/* Contenedor 4: CRIA PRÒPIA (pantalla)*/
+/* Contenedor 4: CRIA PRÒPIA (pantalla mediana)*/
 .bckg-cont4
 {
-  background: linear-gradient( #E5E5E5 65%, white 35%);
-  margin-bottom: 8%;
+  background: linear-gradient( #E5E5E5 57%, white 43%);
 }
 .titulo-cont4
 {
@@ -737,10 +554,85 @@ text-decoration:none;
   }
 }
 
+/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (pantalla mediana)*/
+.bckg-cont5
+{
+  background-color: #1B1613;
+}
+.conten5
+{
+  position: relative;
+  width: 100%;
+  z-index: -99;
+}
+.img-cont5
+{
+  width: 50%;
+  margin-left: 40%;
+}
+.titulo-cont5
+{
+  width: 42%;
+  margin-top: 7%;
+  margin-left: 12%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 114.9%;
+  text-align: right;
+  letter-spacing: 0.07em; 
+  color: #FFFFFF;
+}
+.textoparraf-cont5
+{
+  width: 45%;
+  margin-top: 2%;
+  margin-left: 11%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 202%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.texto-cont5 
+{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+.mostrarDerecha
+{
+  animation: mostrarDerecha 3s;
+}
+@keyframes mostrarDerecha
+{
+  0%
+  {
+    transform: translateX(-60px);
+  }
+  100%
+  {
+    transform: translateX(0px);
+  }
+}
+
 /* PANTALLA GRANDE */
 }
 @media (min-width: 1400px)
 {
+/* Animaciones */
+.animado
+{
+  opacity: 0;
+  transition: all 5s;
+}
+
 /* Contenedor 1: Inicio Pirineos (pantalla gde)*/
 .conten1
 {
@@ -902,11 +794,6 @@ text-decoration:none;
   margin-left: 6%;
   margin-top: 26%;
 }
-.animado
-{
-  opacity: 0;
-  transition: all 5s;
-}
 .mostrarArriba
 {
   animation: mostrarArriba 3s;
@@ -923,11 +810,10 @@ text-decoration:none;
   }
 }
 
-/* Contenedor 4: CRIA PRÒPIA (pantalla)*/
+/* Contenedor 4: CRIA PRÒPIA (pantalla gde)*/
 .bckg-cont4
 {
-  background: linear-gradient( #E5E5E5 54%, white 46%);
-  height: auto;
+  background: linear-gradient( #E5E5E5 50%, white 50%);
 }
 .titulo-cont4
 {
@@ -970,7 +856,6 @@ text-decoration:none;
   margin-left: 1%;
   margin-top: 8%;
   width: 98%;
-  align:center;
   z-index: -99;
 }
 .fade-in
@@ -990,43 +875,72 @@ text-decoration:none;
   }
 }
 
-/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (pantalla)*/
+/* Contenedor 5: ALIMENTACIÓ ECOLÒGICA (pantalla gde)*/
+.bckg-cont5
+{
+  background-color: #1B1613;
+}
 .conten5
 {
   position: relative;
   width: 100%;
   z-index: -99;
 }
-.logo-cont5
+.img-cont5
 {
-  position: absolute;
-  width: auto;
-  left: 6%;
-  top: 7%;
+  width: 50%;
+  margin-left: 40%;
 }
 .titulo-cont5
 {
-  position: absolute;
-  width: 74%;
-  left: 10%;
-  top: 35%;
-  padding: 0%;
-  margin: 0%;
-  font-size: 64px;
-  line-height: 75px;
-  color: #4A3B3B;
+  width: 42%;
+  margin-top: 12%;
+  margin-left: 12%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 114.9%;
+  text-align: right;
+  letter-spacing: 0.07em; 
+  color: #FFFFFF;
 }
-.texto-cont5
+.textoparraf-cont5
+{
+  width: 33%;
+  margin-top: 2%;
+  margin-left: 21%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 202%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.texto-cont5 
 {
   position: absolute;
-  width: 76%;
-  left: 10%;
-  top: 43%;
-  padding: 0%;
-  margin: 0%;
-  font-size: 24px;
-  line-height: 155.4%;
-  color: #4A3B3B;
+  left: 0%;
+  top: 0%;
+}
+.mostrarDerecha
+{
+  animation: mostrarDerecha 3s;
+}
+@keyframes mostrarDerecha
+{
+  0%
+  {
+    transform: translateX(-60px);
+  }
+  100%
+  {
+    transform: translateX(0px);
+  }
 }
 
 /* Contenedor 6: LA GRANJA (pantalla)*/
@@ -1047,27 +961,25 @@ text-decoration:none;
 }
 
 /* Contenedor 7: MEDIAMBIENT (pantalla)*/
-.logo-cont7
+.conten7
 {
-  position: absolute;
-  width: auto;
-  left: 6%;
-  top: 7%;
-}
-.logo-certif
-{
-  position: absolute;
-  width: auto;
-  left: 58%;
-  top: 30%;
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
 }
 .titulo-cont7
 {
   position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 40%;
-  font-size: 64px;
+  width: 34%;
+  left: 0%;
+  top: 0%;
+  font-family: 'Gayathri', sans-serif;s
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
 }
 .texto-cont7
 {
@@ -1076,6 +988,13 @@ text-decoration:none;
   left:35%;
   top: 50%;
   font-size: 24px;
+}
+.logo-certif
+{
+  position: absolute;
+  width: auto;
+  left: 58%;
+  top: 30%;
 }
 /* Contenedor 8: ELS NOSTRES OUS (pantalla) */
 .texto-cont8
