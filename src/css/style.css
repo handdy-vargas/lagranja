@@ -455,6 +455,7 @@ text-decoration:none;
   font-weight: normal;
   font-size: 24px;
   line-height: 150%;
+  text-align: justify;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
@@ -508,7 +509,7 @@ text-decoration:none;
 .subtitulo-cont4
 {
   width: 95%;
-  margin-left: 7%;
+  margin-left: 9%;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -521,9 +522,10 @@ text-decoration:none;
 {
   width: 95%;
   margin-top: 4%;
-  margin-left: 7%;
+  margin-left: 9%;
   font-style: normal;
   font-weight: normal;
+  text-align: justify;
   font-size: 24px;
   line-height: 176.5%;
   letter-spacing: 0.025em;
@@ -746,7 +748,7 @@ text-decoration:none;
   width: 40%;
   top:0;
   left:0;
-  margin-left: 6%;
+  margin-left: 10%;
   margin-top: 13%;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
@@ -763,7 +765,7 @@ text-decoration:none;
   width: 20%;
   top:0;
   left:0;
-  margin-left: 6%;
+  margin-left: 10%;
   margin-top: 22%;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
@@ -782,6 +784,7 @@ text-decoration:none;
   font-weight: normal;
   font-size: 24px;
   line-height: 150%;
+  text-align: justify;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
@@ -790,8 +793,8 @@ text-decoration:none;
   position: absolute;
   left: 0%;
   top: 0%;
-  width: 40%;
-  margin-left: 6%;
+  width: 37%;
+  margin-left: 10%;
   margin-top: 26%;
 }
 .mostrarArriba
@@ -818,6 +821,7 @@ text-decoration:none;
 .titulo-cont4
 {
   margin-top: 14%;
+  margin-left: 17%;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -830,7 +834,7 @@ text-decoration:none;
 .subtitulo-cont4
 {
   width: 70%;
-  margin-left: 20%;
+  margin-left: 27%;
   font-family: 'Gayathri', sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -843,7 +847,7 @@ text-decoration:none;
 {
   width: 67%;
   margin-top: 4%;
-  margin-left: 20%;
+  margin-left: 27%;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -960,7 +964,7 @@ text-decoration:none;
   line-height: 155.4%;
 }
 
-/* Contenedor 7: MEDIAMBIENT (pantalla)*/
+/* Contenedor 7: MEDIAMBIENT (pantalla gde)*/
 .conten7
 {
   position: relative;    /* para poder posicionar el texto de forma absoluta */
@@ -970,9 +974,9 @@ text-decoration:none;
 {
   position: absolute;
   width: 34%;
-  left: 0%;
-  top: 0%;
-  font-family: 'Gayathri', sans-serif;s
+  margin-top: 12%;
+  margin-left: 50%;
+  font-family: 'Gayathri', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 90px;
@@ -981,20 +985,35 @@ text-decoration:none;
   letter-spacing: 0.07em;
   color: #FFFFFF;
 }
+.textoparraf-cont7
+{
+  position: relative;
+  width: 32%;
+  margin-top: 20%;
+  margin-left: 51%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 155.4%;
+  text-align: justify;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+.logo-certif7
+{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-top: 48%;
+  margin-left: 51%;
+}
 .texto-cont7
 {
   position: absolute;
-  width: 55%;
-  left:35%;
-  top: 50%;
-  font-size: 24px;
-}
-.logo-certif
-{
-  position: absolute;
-  width: auto;
-  left: 58%;
-  top: 30%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
 }
 /* Contenedor 8: ELS NOSTRES OUS (pantalla) */
 .texto-cont8
