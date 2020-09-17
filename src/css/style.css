@@ -113,6 +113,8 @@ body
 
 /* Contenedor 7: MEDIAMBIENT (movil)*/
 
+/* Contenedor 8: ELS NOSTRES OUS (movil)*/
+
 /* Contenedor 9: OUS FRESCOS (movil)*/
 .conten9
 {
@@ -624,6 +626,123 @@ text-decoration:none;
   }
 }
 
+/* Contenedor 7: MEDIAMBIENT (pantalla mediana)*/
+.conten7
+{
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
+}
+.titulo-cont7
+{
+  position: absolute;
+  width: 34%;
+  margin-top: 6%;
+  margin-left: 40%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+.textoparraf-cont7
+{
+  position: relative;
+  width: 45%;
+  margin-top: 15%;
+  margin-left: 40%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 155.4%;
+  text-align: justify;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+.logo-certif7
+{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-top: 46%;
+  margin-left: 40%;
+}
+.texto-cont7
+{
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+}
+.mostrarIzquierda
+{
+  animation: mostrarIzquierda 3s;
+}
+@keyframes mostrarIzquierda
+{
+  0%
+  {
+    transform: translateX(60px);
+  }
+  100%
+  {
+    transform: translateX(0px);
+  }
+}
+
+/* Contenedor 9: OUS FRESCOS (pantalla mediana) */
+.conten9
+{
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
+}
+.titulo-cont9
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  margin-top: 8%;
+  margin-left: 25%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 90px;
+  line-height: 139.4%;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+.texto-cont9 
+{
+  position: absolute;
+  width: 50%;
+  top: 0%; 
+  left: 0%;
+  margin-top: 16%;
+  margin-left: 25%; 
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.logo-cont9
+{
+  position: absolute;
+  width: auto;
+  left: 0%;
+  top: 0%;
+  margin-top: 30%;
+  margin-left: 44%; 
+}
+
 /* PANTALLA GRANDE */
 }
 @media (min-width: 1400px)
@@ -947,7 +1066,7 @@ text-decoration:none;
   }
 }
 
-/* Contenedor 6: LA GRANJA (pantalla)*/
+/* Contenedor 6: LA GRANJA (pantalla gde)*/
 .titulo-cont6
 {
   width: 100%;
@@ -1005,7 +1124,7 @@ text-decoration:none;
   position: absolute;
   left: 0%;
   top: 0%;
-  margin-top: 48%;
+  margin-top: 45%;
   margin-left: 51%;
 }
 .texto-cont7
@@ -1015,7 +1134,38 @@ text-decoration:none;
   left: 0%;
   top: 0%;
 }
+.mostrarIzquierda
+{
+  animation: mostrarIzquierda 3s;
+}
+@keyframes mostrarIzquierda
+{
+  0%
+  {
+    transform: translateX(60px);
+  }
+  100%
+  {
+    transform: translateX(0px);
+  }
+}
+
 /* Contenedor 8: ELS NOSTRES OUS (pantalla) */
+.conten8
+{
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
+}
+.titulo-cont8
+{
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 139.4%;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
 .texto-cont8
 {
   position: absolute;
@@ -1031,30 +1181,55 @@ text-decoration:none;
   letter-spacing: 0.07em;
   color:red;
 }
-/* Contenedor 9: OUS FRESCOS (pantalla) */
-.logo-cont9
+/* Contenedor 9: OUS FRESCOS (pantalla gde) */
+.conten9
 {
-  position: absolute;
-  width: auto;
-  left: 6%;
-  top: 7%;
+  position: relative;    /* para poder posicionar el texto de forma absoluta */
+  z-index: -99;
 }
 .titulo-cont9
 {
   position: absolute;
-  width: 40%;
-  left: 35%;
-  top: 50%;
-  font-size: 64px;
+  top: 0;
+  left: 0;
+  width: 50%;
+  margin-top: 12%;
+  margin-left: 25%;
+  font-family: 'Gayathri', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 139.4%;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
 }
 .texto-cont9 
 {
-  width: 70%;
-  top: 60%; 
-  left: 15%; 
+  position: absolute;
+  width: 50%;
+  top: 0%; 
+  left: 0%;
+  margin-top: 20%;
+  margin-left: 25%; 
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 24px;
-  line-height: 155.4%;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
 }
+.logo-cont9
+{
+  position: absolute;
+  width: auto;
+  left: 0%;
+  top: 0%;
+  margin-top: 30%;
+  margin-left: 44%; 
+}
+
 /* Contenedor 10: Contacto (Pantalla)*/
 .formulario
 {

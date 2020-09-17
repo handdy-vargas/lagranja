@@ -11,6 +11,10 @@ animados[2] = {
     element: $(".texto-cont5"),
     animacion: "mostrarDerecha"
 }
+animados[3] = {
+    element: $(".texto-cont7"),
+    animacion: "mostrarIzquierda"
+}
 
 function mostrarScroll()
 {
