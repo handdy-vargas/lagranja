@@ -46,6 +46,11 @@ body
   padding: 0%;
   margin: 0%;
 }
+.col-4
+{
+  padding: 0%;
+  margin: 0%;
+}
 .anchopant
 {
   width: 100%;
@@ -158,98 +163,6 @@ body
   color: #4A3B3B;
 }
 /* Contenedor 10: CONTACTO (movil)*/
-.formulario
-{
-  width: 100%;
-  height: auto;
-  background-image: url("../images/cont10.png");
-  background-size: cover;
-}
-form
-{
-  width: 100%;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-}
-.titulo-cont10
-{
-  margin: 0;
-  color: #4A3B3B;
-  text-align: center;
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.07em;
-  margin-bottom: 50px;
-}
-ol
-{
-  list-style: none;
-}
-ol li label
-{
-  width:30%;
-  padding-top: 1%;
-  float: left;
-  text-align: left;
-  font-size: 10px;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  color: #000000;
-}
-.input, textarea
-{
-  width: 65%;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  font-size:24px;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  border: none;
-  background: rgba(251, 251, 251, 0.8);
-  color: #4A3B3B;
-}
-textarea
-{
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%;
-}
-.aviso
-{
-  padding: 0;
-  margin: 0;
-  margin-left: 30%;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size:10px;
-  color:black
-}
-#boton
-{
-  width: 18%;
-  background: black;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size:10px;
-  color: white;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 40%;
-  margin-top: 10%;
-}
-#boton:hover
-{
-  cursor: pointer;
-}
 
 /* PANTALLA MEDIANA */
 @media (min-width: 992px)
@@ -1231,60 +1144,90 @@ text-decoration:none;
 }
 
 /* Contenedor 10: Contacto (Pantalla)*/
-.formulario
+.bckg-contacto
 {
-  width: 100%;
-  height: auto;
+  background-image: url("../images/cont10.png");
+  background-size: 100vw 100vh;
+  margin: 0%;
 }
 form
 {
-  width: 40%;
-  height: auto;
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  border-radius: 8px 0px 0px 8px;
+}
+ol
+{
+  list-style: none;
+  padding: 0;
 }
 .titulo-cont10
 {
-  margin: 0;
-  font-size: 24px;
-  margin-bottom: 50px;
-}
-ol li label
-{
-  width:35%;
-  padding-top: 1%;
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-bottom: 2%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 18px;
+  line-height: 21px;
+  color: #6A6868;
 }
-.input, textarea
+.campos
 {
-  width: 55%;
-  margin-bottom: 20px;
-  font-size:24px;
-}
-textarea
-{
-  min-height: 200px;
-  max-height: 200px;
-  max-width: 100%;
+  width: 70%;
+  margin-left: 15%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.2px solid #757070;
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 4%;
+  padding-bottom: 1% ;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ABA7A7;
 }
 .aviso
 {
-  padding: 0;
-  margin: 0;
-  margin-left: 35%;
-  font-size:16px;
+  padding-top: 4%;
+  margin-left: 15%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ABA7A7;
 }
 #boton
 {
   width: 20%;
-  padding: 10px;
-  margin-left: 40%;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
-  font-size:18px;
-  line-height: 24px;
+  margin-left: 40%;
+  background: #9E3223;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 19.5px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FCFCFC;
 }
 #boton:hover
 {
   cursor: pointer;
+}
+.contacto
+{
+  background: #9E3223;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 8px 8px 0px;
 }
 }
 

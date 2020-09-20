@@ -227,19 +227,24 @@
         </div>
 
         <!--CONTENEDOR 10: CONTACTO-->
-        <div id="cont10" class="container-fluid">
-            <div class="row formulario">
-                <form action="enviar.php" method="POST">
-                    <h2 class="titulo-cont10">Formulari de contacte</h2>
-                    <ol>
-                        <li><label for="nombre">Nom i Cognom:</label><input class="input" type="text" name="nombre" required></li>
-                        <li><label for="correo">Correu electrònic:</label><input class="input" type="text" name="correo" required></li>
-                        <li><label for="telefono">Telèfon de contacte:</label><input class="input" type="text" name="telefono" required></li>
-                        <li><label for="mensaje">Missatge:</label><textarea name="mensaje" required></textarea></li>
-                        <li class="aviso"><input type="checkbox" name="checkbox" required> <span>Accepta l'avís legal i la política de privacitat.</span></li>
-                    </ol>
-                    <input type="submit" value="Enviar" id="boton">
-                </form>
+        <div id="cont10" class="container-fluid bckg-contacto">
+            <div class="row">
+                <div class="col-4">
+                    <form action="enviar.php" method="POST">
+                        <h2 class="titulo-cont10">Contacta'ns</h2>
+                        <ol>
+                            <li><input class="input campos" placeholder="Nom i Cognom" type="text" name="nombre" required></li>
+                            <li><input class="input campos" placeholder="Correu electrònic" type="text" name="correo" required></li>
+                            <li><input class="input campos" placeholder="Telèfon de contacte" type="text" name="telefono" required></li>
+                            <li><textarea class="campos" name="mensaje" placeholder="¿Com podem ajudar?" required rows="5"></textarea></li>
+                            <li class="aviso"><input type="checkbox" name="checkbox" required><span> Accepta l'avís legal i la política de privacitat.</span></li>
+                        </ol>
+                        <input type="submit" value="Enviar" id="boton">
+                    </form> 
+                </div>
+                <div class="col-2 contacto">
+                    <img class="img-fluid" src="images/logo.png" alt="Logo Ous del Rialb">
+                </div>
             </div>
         </div>
         
